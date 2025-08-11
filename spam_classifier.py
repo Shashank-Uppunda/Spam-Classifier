@@ -7,7 +7,7 @@ from sklearn.naive_bayes import MultinomialNB
 from sklearn.metrics import accuracy_score, classification_report
 
 # Only keep 'label' (ham/spam) and 'message' columns
-df = pd.read_csv("spam.csv", encoding='latin-1')[['v1', 'v2']]
+df = pd.read_csv("spam_classifier_dataset.csv", encoding='latin-1')[['v1', 'v2']]
 df.columns = ['label', 'message']  # Rename columns
 
 # Convert labels to numbers: spam=1, ham=0

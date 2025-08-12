@@ -1,4 +1,4 @@
-# Email/SMS Spam Classifier using Naive Bayes (scikit-learn)
+# Email/SMS Spam Classifier using Naive Bayes
 
 import pandas as pd
 from sklearn.model_selection import train_test_split
@@ -33,7 +33,7 @@ print("Model Accuracy:", accuracy_score(y_test, y_pred))
 print("\nClassification Report:\n", classification_report(y_test, y_pred))
 
 # Allow user to enter messages for prediction
-print("\nType a message to classify as Spam or Ham.")
+print("\nType a message to classify as Spam or Ham (Ham means not spam).")
 print("Enter 'X' to stop.\n")
 
 while True:
